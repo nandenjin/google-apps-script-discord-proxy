@@ -1,0 +1,31 @@
+{
+  "name": "google-apps-script-discord-proxy",
+  "version": "0.0.0",
+  "description": "Proxy to Discord API for Google Apps Script",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build ./src/index.ts -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandenjin/google-apps-script-discord-proxy.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "Kazumi Inada <hello@nandenjin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nandenjin/google-apps-script-discord-proxy/issues"
+  },
+  "homepage": "https://github.com/nandenjin/google-apps-script-discord-proxy#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.12.0"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  }
+}

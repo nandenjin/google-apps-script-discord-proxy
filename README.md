@@ -18,6 +18,10 @@ Enabling Google Apps Script to make HTTP requests to Discord API.
   - `https://www.googleapis.com/auth/script.external_request`
   - `openid`
 - **Headers**: Use `Authorization` for Cloud Run and `Discord-Authorization` for Discord API.
+- **Set GCP project for GAS**: Open settings of Apps Script and set GCP project same as deployed server.
+
+>[!IMPORTANT]
+> Every time you add new script to project, you have to **re-deploy Cloud Run service in order to activate new OAuth client on it.**
 
 ## Sample Code
 

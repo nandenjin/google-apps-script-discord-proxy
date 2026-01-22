@@ -1,0 +1,12 @@
+on:
+  push:
+    branches: [dev, "renovate/*", "dependabot/*"]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request' || !(startsWith(github.ref, 'renovate/') || startsWith(github.ref, 'dependabot/'))
+    steps:
+      - uses: actions/checkout@v6
+      - run: docker build .

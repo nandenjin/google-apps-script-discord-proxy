@@ -1,4 +1,18 @@
-node_modules
-eslint.config.js
-.prettierrc.json
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# IDE
+.vscode
+.idea
+
+# GitHub
+.github
+
+# Misc
 *.log
+.prettierrc.json

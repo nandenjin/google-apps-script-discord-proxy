@@ -5,6 +5,13 @@ Enabling Google Apps Script to make HTTP requests to Discord API.
 >[!CAUTION]
 > Make sure to set authorization when you deploy this online.
 
+## Environment Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `PORT` | `3000` | Port to listen on |
+| `VERSION` | `0.0.0` | Version string used in User-Agent header |
+
 ## Example usage with Google Cloud Run
 
 ### Setup Google Cloud Run
